@@ -1,0 +1,11 @@
+#N canvas 530 230 450 300 10;
+#X obj 193 79 adc~;
+#X obj 192 166 writesf~ 2;
+#X msg 297 96 open recordingigua.wav;
+#X msg 315 125 start;
+#X msg 361 166 stop;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
